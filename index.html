@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林墨阳 | AI 研究员 & 全栈开发者</title>
+    <!-- 使用CDN加载Font Awesome图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 使用CDN加载Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- 自定义CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- 主内容 -->
+    <div id="content" class="hidden">
+        <!-- 导航栏 -->
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#home">林墨阳</a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">首页</a></li>
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#portfolio">作品集</a></li>
+                    <li><a href="#contact">联系方式</a></li>
+                    <li class="theme-switch">
+                        <i class="fas fa-moon"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 首页/欢迎区域 -->
+        <section id="home" class="section">
+            <div class="container">
+                <div class="home-content">
+                    <div class="home-text animate__animated animate__fadeIn">
+                        <h1>您好，我是<span class="highlight">林墨阳</span></h1>
+                        <h2>AI 研究员 / 全栈开发者 / 解决方案架构师</h2>
+                        <p>致力于将人工智能技术应用于实际问题，创造更美好的世界</p>
+                        <a href="#about" class="btn">了解更多</a>
+                    </div>
+                    <div class="home-image animate__animated animate__fadeInRight">
+                        <div class="profile-img-container">
+                            <!-- 此处放置个人照片 -->
+                            <img src="https://picsum.photos/300/300" alt="个人照片" class="profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+
+        <!-- 关于我 -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">关于我</h2>
+                <div class="section-content">
+                    <div class="about-text">
+                        <h3>我是谁</h3>
+                        <p>我是一名AI研究员和全栈开发者，专注于人工智能伦理与可解释性研究。毕业于清华大学计算机科学与技术系（本科）和卡耐基梅隆大学人工智能硕士（CMU），目前在微软亚洲研究院（MSRA）担任高级研究员。我热衷于将前沿AI技术转化为解决实际问题的应用。</p>
+                        
+                        <h3>工作经历</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2021 - 至今</div>
+                                <div class="timeline-content">
+                                    <h4>高级研究员</h4>
+                                    <p>微软亚洲研究院（MSRA）</p>
+                                    <p>主导AI伦理与可解释性研究，带领团队开发多模态医疗诊断系统，发表高影响力学术论文。</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2019 - 2021</div>
+                                <div class="timeline-content">
+                                    <h4>AI 研究员</h4>
+                                    <p>谷歌硅谷总部 AI Lab</p>
+                                    <p>负责搜索算法优化，开发NLP相关技术，参与大型AI系统架构设计。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills">
+                        <h3>专业技能</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">AI 算法 (NLP/CV)</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">全栈开发</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">云架构设计</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">研究与论文发表</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品集 -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2 class="section-title">研究与项目</h2>
+                
+                <!-- 项目展示过滤器保留 -->
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="ai">AI研究</button>
+                    <button class="filter-btn" data-filter="dev">开发项目</button>
+                    <button class="filter-btn" data-filter="paper">学术论文</button>
+                </div>
+                
+                <!-- 替换项目网格为轮播 -->
+                <div class="projects-carousel-container">
+                    <div class="projects-carousel">
+                        <div class="carousel-inner">
+                            <!-- 项目1 -->
+                            <div class="project-carousel-item active" data-category="ai">
+                                <div class="project-slide">
+                                    <div class="project-image">
+                                        <img src="https://picsum.photos/800/400?random=1" alt="医疗诊断系统">
+                                    </div>
+                                    <div class="project-content">
+                                        <h3>多模态医疗诊断系统</h3>
+                                        <p>这是一个结合图像识别和自然语言处理的医疗诊断辅助系统，能够同时分析医学影像和病历文本数据，为医生提供诊断建议。</p>
+                                        <div class="project-tags">
+                                            <span class="tag">AI</span>
+                                            <span class="tag">医疗技术</span>
+                                            <span class="tag">计算机视觉</span>
+                                        </div>
+                                        <a href="#" class="btn project-link" data-id="project1">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- 项目2 -->
+                            <div class="project-carousel-item" data-category="dev">
+                                <div class="project-slide">
+                                    <div class="project-image">
+                                        <img src="https://picsum.photos/800/400?random=2" alt="NLP工具包">
+                                    </div>
+                                    <div class="project-content">
+                                        <h3>NLP-Toolkit开源项目</h3>
+                                        <p>这是一个用于自然语言处理的开源工具包，提供了从文本预处理到高级模型训练的全套解决方案。目前在GitHub上已累计12k+Star。</p>
+                                        <div class="project-tags">
+                                            <span class="tag">自然语言处理</span>
+                                            <span class="tag">开源</span>
+                                            <span class="tag">GitHub</span>
+                                        </div>
+                                        <a href="#" class="btn project-link" data-id="project2">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- 项目3 -->
+                            <div class="project-carousel-item" data-category="paper">
+                                <div class="project-slide">
+                                    <div class="project-image">
+                                        <img src="https://picsum.photos/800/400?random=3" alt="NeurIPS论文">
+                                    </div>
+                                    <div class="project-content">
+                                        <h3>可解释AI临床决策支持论文</h3>
+                                        <p>这篇论文探讨了如何使AI模型在医疗决策支持中更加透明和可解释，提出了一种新的可视化技术，使医生能够理解AI推荐背后的原因。</p>
+                                        <div class="project-tags">
+                                            <span class="tag">NeurIPS 2023</span>
+                                            <span class="tag">学术研究</span>
+                                            <span class="tag">可解释AI</span>
+                                        </div>
+                                        <a href="#" class="btn project-link" data-id="project3">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 轮播控制按钮 -->
+                        <button class="carousel-control prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-control next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <!-- 轮播指示器 -->
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-index="0"></span>
+                            <span class="indicator" data-index="1"></span>
+                            <span class="indicator" data-index="2"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 项目模态框保留 -->
+                <div id="portfolioModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <div id="modalContent">
+                            <!-- 内容将通过JavaScript动态加载 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">联系我</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>联系信息</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>xiaochengzi0319@163.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+86 138 **** ****</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>北京市, 中国</p>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-researchgate"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>发送消息</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">姓名</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">邮箱</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">主题</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">消息</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">发送消息</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <p>&copy; 2023 林墨阳 (Lin Moyang). 保留所有权利.</p>
+                    <div class="footer-links">
+                        <a href="#home">首页</a>
+                        <a href="#about">关于我</a>
+                        <a href="#portfolio">研究与项目</a>
+                        <a href="#contact">联系方式</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-researchgate"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="back-to-top">
+                <a href="#home"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
